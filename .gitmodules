@@ -1,0 +1,3 @@
+[submodule "kubos"]
+	path = kubos
+	url = https://github.com/kubos/kubos
