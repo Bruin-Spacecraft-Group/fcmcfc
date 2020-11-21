@@ -10,21 +10,21 @@
 ### Data Protocols
 
 * I2C/SPI
-	* communication to sensors (e.g. voltage)​
+	* communication to sensors (e.g. voltage)
 * UART (serial)
-	* debug interface, DCIU control, camera​
+	* debug interface, DCIU control, camera
 * GPIO
-	* watchdog heartbeat pulse, bit-banging​
+	* watchdog heartbeat pulse, bit-banging
 * RTC
-	* button battery + crystal for ultra low-power timekeeping​
+	* button battery + crystal for ultra low-power timekeeping
 * CAN
-	* data from comms module​
+	* data from comms module
 * ETH
-	* ping from comms module​
+	* ping from comms module
 * PWM
-	* control for attitude actuators​
+	* control for attitude actuators
 * USB Serial
-	* development, debugging​
+	* development, debugging
 
 ### From system breakdown slide
 * CDH needs to recieve telemetry from:
@@ -59,24 +59,24 @@
 		* Potential Options: (Which motor controller are we using? Will it be PWM?)
 	* Magnetorquers
 		* Potential Options (Which magnetorquer are we using?)
-			* CubeTorquer​
-				* Nominal magnetic moment (2.5V @ 25 degC): +/- 0.24 Am2​
-				* Residual Moment: ​<0.48 mAm2
+			* CubeTorquer
+				* Nominal magnetic moment (2.5V @ 25 degC): +/- 0.24 Am2
+				* Residual Moment: <0.48 mAm2
 			* CubeCoil
-				* Nominal magnetic moment (5V @ 25 degC): +/- 0.13 Am2​
+				* Nominal magnetic moment (5V @ 25 degC): +/- 0.13 Am2
 	* Camera
-		* 4D Systems uCAM-III​ (Are we using this?)
-			* Very good documentation​
-			* Auto WB, brightness, contrast; manual focus​
-			* Operate under -20C ~ 85C​
-			* Serial​
+		* 4D Systems uCAM-III (Are we using this?)
+			* Very good documentation
+			* Auto WB, brightness, contrast; manual focus
+			* Operate under -20C ~ 85C
+			* Serial
 			* Adjustable lens -> 115deg
 	* IMU: Inertial Measurement Unit
-		* CHRobotics UM7 Sensor​ (Are we using this?)
-			* On-board Kalman Filtering​
-			* Outputs include euler angles, attitude quarternion​
-			* Raw data from Accelerometer, Gyroscope and Magnetometer​
-			* Magnetometer serves as external reference​
+		* CHRobotics UM7 Sensor (Are we using this?)
+			* On-board Kalman Filtering
+			* Outputs include euler angles, attitude quarternion
+			* Raw data from Accelerometer, Gyroscope and Magnetometer
+			* Magnetometer serves as external reference
 
 * EPS
 	* Potential Options: (Which one are we using, and will there be a builtin controller, or will we use seperate senors?)
@@ -89,11 +89,11 @@
 
 * Communications Transciever:
 	* Potential Options: (Which one will we be using?)
-		* LimeSDR for data, functionality, and prototyping​
+		* LimeSDR for data, functionality, and prototyping
 		* Nanoavionics S-Band Transciever
 
 * DCIU:
 	* UART connection
-	* CDH simply commands "Startup", "Throttle Level 1", "Shutdown" etc.​
-	* Contains entire logic structure, calibration data, and throttle table for MiXI​
+	* CDH simply commands "Startup", "Throttle Level 1", "Shutdown" etc.
+	* Contains entire logic structure, calibration data, and throttle table for MiXI
 	* (Is there a specification of the commands we can send?)
