@@ -1,11 +1,11 @@
 [package]
-name = "rust-mission-app"
+name = "telemetry"
 version = "0.1.0"
-authors = ["Catherine Garabedian <catherine@kubos.co>"]
+authors = ["Andy Peng <andypg20@gmail.com"]
 edition = "2018"
 
 [dependencies]
 failure = "0.1.2"
 getopts = "0.2"
-kubos-app = { path = "../../apis/app-api/rust" }
+kubos-app = { path = "../../kubos/apis/app-api/rust" }
 log = "^0.4.0"
