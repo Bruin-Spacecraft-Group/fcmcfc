@@ -1,1 +1,5 @@
-.vagrant/*
+# VM
+.vagrant/
+
+# Editor
+.vscode/
