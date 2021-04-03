@@ -1,5 +1,5 @@
 [package]
-name = "monitor-service"
+name = "fake-monitor"
 version = "0.1.0"
 authors = ["Marshall Culpepper <marshall@kubos.com>", "Andy Peng <andypg20@gmail.com>"]
 edition = "2018"

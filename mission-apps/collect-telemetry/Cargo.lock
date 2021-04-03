@@ -126,6 +126,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "collect-telemetry"
+version = "0.1.0"
+dependencies = [
+ "failure",
+ "getopts",
+ "kubos-app",
+ "log",
+]
+
+[[package]]
 name = "cookie"
 version = "0.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1329,16 +1339,6 @@ dependencies = [
  "quote",
  "syn",
  "unicode-xid",
-]
-
-[[package]]
-name = "telemetry"
-version = "0.1.0"
-dependencies = [
- "failure",
- "getopts",
- "kubos-app",
- "log",
 ]
 
 [[package]]

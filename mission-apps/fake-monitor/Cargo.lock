@@ -272,6 +272,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "fake-monitor"
+version = "0.1.0"
+dependencies = [
+ "failure",
+ "juniper",
+ "kubos-service",
+ "lazy_static",
+ "log 0.4.14",
+ "regex",
+ "serde",
+ "serde_derive",
+ "serde_json",
+]
+
+[[package]]
 name = "fake-simd"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -852,21 +867,6 @@ dependencies = [
  "net2",
  "winapi 0.2.8",
  "ws2_32-sys",
-]
-
-[[package]]
-name = "monitor-service"
-version = "0.1.0"
-dependencies = [
- "failure",
- "juniper",
- "kubos-service",
- "lazy_static",
- "log 0.4.14",
- "regex",
- "serde",
- "serde_derive",
- "serde_json",
 ]
 
 [[package]]
