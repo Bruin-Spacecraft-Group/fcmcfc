@@ -64,9 +64,7 @@ use log::error;
 mod meminfo;
 mod objects;
 #[macro_use]
-mod process;
 mod schema;
-mod userinfo;
 
 fn main() {
     Logger::init("kubos-monitor-service").unwrap();

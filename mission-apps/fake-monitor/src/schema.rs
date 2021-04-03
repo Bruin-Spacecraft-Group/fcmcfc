@@ -19,7 +19,6 @@ use kubos_service;
 
 use crate::meminfo;
 use crate::objects::*;
-use crate::process;
 
 type Context = kubos_service::Context<()>;
 
@@ -37,16 +36,6 @@ graphql_object!(QueryRoot: Context as "Query" |&self| {
         meminfo::MemInfo::from_proc()
             .map(|info| MemInfoResponse { info })
             .map_err(|err| FieldError::new(err, juniper::Value::null()))
-    }
-
-    field ps(&executor, pids: Option<Vec<i32>>) -> FieldResult<Vec<PSResponse>>
-    {
-        let pids_vec: Vec<i32> = match pids {
-            Some(vec) => vec,
-            None => process::running_pids()?
-        };
-
-        Ok(pids_vec.into_iter().map(PSResponse::new).collect())
     }
 });
 
