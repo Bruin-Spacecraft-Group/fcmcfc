@@ -2,7 +2,7 @@
 *target/
 
 # VM
-.vagrant/
+*.vagrant/
 
 # Editor
 .vscode/
