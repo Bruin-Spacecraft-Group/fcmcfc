@@ -67,9 +67,9 @@ mod objects;
 mod schema;
 
 fn main() {
-    Logger::init("kubos-monitor-service").unwrap();
+    Logger::init("fake-monitor-service").unwrap();
 
-    let config = Config::new("monitor-service")
+    let config = Config::new("fake-monitor")
         .map_err(|err| {
             error!("Failed to load service config: {:?}", err);
             err

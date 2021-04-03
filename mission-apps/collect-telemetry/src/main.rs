@@ -75,7 +75,7 @@ fn main() -> Result<(), Error> {
         }
     } else {
         // If there's no subcommand, we'll just go ahead and collect telemetry
-        let monitor_service = ServiceConfig::new("monitor-service")?;
+        let monitor_service = ServiceConfig::new("fake-monitor")?;
         let telemetry_service = ServiceConfig::new("telemetry-service")?;
 
         // Get the amount of memory currently available on the OBC

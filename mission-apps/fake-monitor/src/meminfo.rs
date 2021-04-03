@@ -76,7 +76,7 @@ impl MemInfo {
     }
 
     pub fn from_proc() -> Result<MemInfo, failure::Error> {
-        let file = File::open("/proc/meminfo")?;
+        let file = File::open("./data/meminfo")?;
         let reader = BufReader::new(file);
         Self::parse(reader)
     }

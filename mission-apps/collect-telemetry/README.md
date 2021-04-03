@@ -32,7 +32,7 @@ When starting a Rust-based app from within the Kubos SDK manually, the default `
 file will likely not exist, and so you will need to provide a config file. It will be similar to this:
 
 ```
-$ cargo run -- -c /home/vagrant/kubos/tools/local_config.toml
+$ cargo run -- -c ../fake_config.toml
 ```
 
 The `--` characters make sure that the following parameters are passed to the underlying
